@@ -77,6 +77,7 @@ class Twitter extends tmhOAuth {
 		$this->parent_config['consumer_secret'] = $this->tconfig['CONSUMER_SECRET'];
 		$this->parent_config['token']           = $this->tconfig['ACCESS_TOKEN'];
 		$this->parent_config['secret']          = $this->tconfig['ACCESS_TOKEN_SECRET'];
+		$this->parent_config['curl_proxy']      = $this->tconfig['curl_proxy'];
 
 		if ($session->has('access_token'))
 		{
